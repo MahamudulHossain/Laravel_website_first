@@ -5,6 +5,7 @@
 
 @include('Components.HomeBanner')
 @include('Components.HomeService')
+@include('Components.HomeCourses')
 
 
 @endsection

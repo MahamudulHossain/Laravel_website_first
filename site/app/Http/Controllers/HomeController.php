@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\visitorModel;
 use App\ServicesModel;
+use App\CoursesModel;
 
 class HomeController extends Controller
 {
@@ -17,6 +18,7 @@ class HomeController extends Controller
     visitorModel::insert(['ip_address'=>$UserIP,'visit_time'=>$timeDate]);
 
     $services = json_decode(ServicesModel::all());
-    return view('Home',['services'=>$services]);
+    $courses = json_decode(CoursesModel::orderBy('id','desc')->limit(6)->get());
+    return view('Home',['services'=>$services,'courses'=>$courses]);
     }
 }
