@@ -170,7 +170,7 @@
       loadCoursesData();
   });
   function deleteCoursesData(dataID) {
-    $(this).html("<div class='spinner-border spinner-border-sm text-light' role='status'></div>");
+    $('#CoursesDeleteConfirmBtn').html("<div class='spinner-border spinner-border-sm text-light' role='status'></div>");
       axios.post('/deleteCoursesData', {
               id: dataID
           })

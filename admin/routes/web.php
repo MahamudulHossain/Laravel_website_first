@@ -31,3 +31,16 @@ Route::post('/deleteCoursesData', 'CoursesController@deleteCoursesData');
 Route::post('/getEachCourseData', 'CoursesController@eachCourseData');
 Route::post('/updateCourseData', 'CoursesController@updateCourseData');
 Route::post('/addCoursesData', 'CoursesController@addCoursesData');
+
+//Admin services Managment
+Route::get('/projects', 'ProjectsController@projectsIndex');
+Route::get('/getProjectsData', 'ProjectsController@projectsData');
+Route::post('/deleteProjectsData', 'ProjectsController@deleteProjectsData');
+Route::post('/getEachProjectData', 'ProjectsController@eachProjectData');
+Route::post('/updateProjectData', 'ProjectsController@updateProjectData');
+Route::post('/addProjectsData', 'ProjectsController@addProjectsData');
+
+// Admin contact Managment
+Route::get('/contacts', 'ContactsController@contactsIndex');
+Route::get('/getContactsData', 'ContactsController@contactsData');
+Route::post('/deleteContactsData', 'ContactsController@deleteContactsData');
