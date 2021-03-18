@@ -44,3 +44,12 @@ Route::post('/addProjectsData', 'ProjectsController@addProjectsData');
 Route::get('/contacts', 'ContactsController@contactsIndex');
 Route::get('/getContactsData', 'ContactsController@contactsData');
 Route::post('/deleteContactsData', 'ContactsController@deleteContactsData');
+
+
+//Admin reviews Managment
+Route::get('/reviews', 'ReviewsController@reviewsIndex');
+Route::get('/getReviewsData', 'ReviewsController@reviewsData');
+Route::post('/deleteReviewsData', 'ReviewsController@deleteReviewsData');
+Route::post('/getEachReviewData', 'ReviewsController@eachReviewData');
+Route::post('/updateReviewData', 'ReviewsController@updateReviewData');
+Route::post('/addReviewsData', 'ReviewsController@addReviewsData');

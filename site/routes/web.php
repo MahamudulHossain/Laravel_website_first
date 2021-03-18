@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','HomeController@visitorTracking');
 Route::post('/contactSend','ContactController@contactSend');
+Route::get('/allCourse','AllCoursesController@allCourses');
+Route::get('/allProjects','AllProjectsController@allprojects');
