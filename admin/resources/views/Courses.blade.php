@@ -1,6 +1,6 @@
 @extends('Layout.app')
 @section('content')
-
+@section('title','Admin Panel- Courses')
 
 <div class="container d-none" id="dataDivCourses">
 <div class="row">

@@ -1,4 +1,5 @@
 @extends('Layout.app')
+@section('title','Admin Panel- Visitors')
 
 @section('content')
 <div class="container">

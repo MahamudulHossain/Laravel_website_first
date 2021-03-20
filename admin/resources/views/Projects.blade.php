@@ -1,5 +1,6 @@
 @extends('Layout.app')
 @section('content')
+@section('title','Admin Panel- Projects')
 
 <div class="container d-none" id="dataDivProjects">
 <div class="row">

@@ -1,6 +1,6 @@
 @extends('Layout.app')
 @section('content')
-
+@section('title','Admin Panel- Contact')
 <div class="container d-none" id="dataDivContacts">
 <div class="row">
 <div class="col-md-12 p-5">
