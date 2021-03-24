@@ -60,3 +60,5 @@ Route::post('/addReviewsData', 'ReviewsController@addReviewsData')->middleware('
 //Admin Images Upload Managment
 Route::get('/image_upload', 'ImageUploadController@imageIndex')->middleware('logInCheck');
 Route::post('/uploadPhoto', 'ImageUploadController@uploadPhoto')->middleware('logInCheck');
+Route::get('/getPhotos', 'ImageUploadController@loadImages')->middleware('logInCheck');
+Route::get('/loadMorePhotos/{id}', 'ImageUploadController@loadMorePhotos')->middleware('logInCheck');
